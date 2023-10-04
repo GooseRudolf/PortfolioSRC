@@ -1,0 +1,1 @@
+document.body.innerHTML += '<h1>Hello Git From JS</h1>'
