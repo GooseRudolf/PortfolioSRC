@@ -1,0 +1,779 @@
+@media(max-width:1200px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header {
+        &__container {
+            padding: 50px 0px 20px 0px;
+        }
+
+        &__center {
+            padding-bottom: 20px;
+
+            &-title {
+                font-size: 28px;
+                line-height: 60px;
+                margin-bottom: 20px;
+
+                span {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+    .main {
+        .section-information {
+            padding: 80px 0px;
+
+            &__title,
+            &__p {
+                margin-bottom: 20px;
+            }
+
+            &__p {
+                font-size: 14px;
+            }
+        }
+
+        .midle {
+            h2 {
+                padding: 100px 0px;
+                font-size: 36px;
+                line-height: 50px;
+            }
+        }
+    }
+
+    .footer {
+        &__container {
+            padding: 40px 0px;
+        }
+
+        &__top {
+            margin-bottom: 80px;
+
+            &-contacts {
+                &-title {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 25px;
+                }
+
+                &-item {
+                    font-size: 16px;
+                    line-height: 23px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .logo {
+        width: 173px;
+        height: 45px;
+    }
+
+    .messager {
+        &__list {
+            &-item {
+                &-link {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+
+    .button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .form {
+        &__title {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 28px;
+        }
+
+        &__input {
+            padding: 8px 4px;
+        }
+
+        &__button {
+            margin-top: 25px;
+        }
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .flex-container {
+        &__item {
+            margin-bottom: 18px;
+        }
+    }
+
+    .list {
+        &__item {
+            margin-top: 28px;
+            line-height: 20px;
+
+            &-number {
+                font-size: 16px;
+                margin: 12px 0px;
+            }
+
+            &-title {
+                font-size: 18px;
+                line-height: 23px;
+                margin-bottom: 14px;
+            }
+
+            &-desc {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .part-information {
+        &__title {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 9px;
+        }
+
+        &__p {
+            font-size: 12px;
+            line-height: 17px;
+
+            &_tab {
+                padding-left: 30px;
+                margin-top: 25px;
+            }
+
+            span {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .tabs {
+        &__label {
+            font-size: 16px;
+            line-height: 22px;
+            margin-right: 18px;
+        }
+
+        &__content {
+            padding-top: 30px;
+        }
+    }
+
+    .p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:1000px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header {
+        &__container {
+            padding: 40px 0px 15px 0px;
+        }
+
+        &__center {
+            &-title {
+                font-size: 25px;
+                line-height: 50px;
+                margin-bottom: 15px;
+
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    .main {
+        .section-information {
+            padding: 60px 0px;
+
+            &__title,
+            &__p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .midle {
+            h2 {
+                padding: 80px 0px;
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .footer {
+        &__container {
+            padding: 30px 0px;
+        }
+
+        &__top {
+            margin-bottom: 60px;
+
+            &-contacts {
+                &-title {
+                    margin-bottom: 20px;
+                }
+
+                &-item {
+                    font-size: 13px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .logo {
+        width: 164px;
+        height: 40px;
+    }
+
+    .form {
+        &__title {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+        &__input {
+            padding: 8px 4px;
+            font-size: 12px;
+        }
+
+        &__button {
+            margin-top: 20px;
+        }
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .flex-container {
+        &__item {
+            margin-bottom: 12px;
+        }
+    }
+
+    .list {
+        &__item {
+            margin-top: 24px;
+
+            &-number {
+                margin: 10px 0px;
+            }
+
+            &-title {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 12px;
+            }
+
+            &-desc {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .part-information {
+        &__title {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 8px;
+        }
+
+        &__p {
+            font-size: 11px;
+            line-height: 15px;
+
+            &_tab {
+                padding-left: 20px;
+                margin-top: 15px;
+            }
+
+            span {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .tabs {
+        &__label {
+            font-size: 14px;
+            line-height: 20px;
+            margin-right: 15px;
+        }
+    }
+
+    .p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        max-width: 100%;
+        padding: 0px 10px;
+    }
+
+    .header {
+        &__container {
+            padding: 40px 0px 15px 0px;
+        }
+
+        &__center {
+            padding-bottom: 10px;
+
+            &-title {
+                font-size: 24px;
+                line-height: 50px;
+                margin-bottom: 15px;
+
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    .main {
+        .section-information {
+            padding: 40px 0px;
+            text-align: center;
+
+            &__title,
+            &__p {
+                margin-bottom: 15px;
+            }
+
+            &__p {
+                font-size: 12px;
+                margin-top: 20px;
+            }
+
+            &__img {
+                margin: 0px auto;
+            }
+        }
+
+        .midle {
+            h2 {
+                width: 80%;
+                padding: 60px 0px;
+                font-size: 26px;
+                line-height: 40px;
+            }
+        }
+    }
+
+    .footer {
+        &__container {
+            padding: 30px 0px;
+        }
+
+        &__top,
+        &__bottom {
+            display: block;
+            text-align: center;
+        }
+
+        &__top {
+            margin-bottom: 60px;
+
+            &-form {
+                width: 50%;
+                margin: 0px auto;
+            }
+            &-contacts {
+                &-title {
+                    margin-top: 20px;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                &-item {
+                    font-size: 14px;
+                    line-height: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        &__bottom {
+            &-link {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .logo {
+        width: 146px;
+        height: 35px;
+    }
+
+    .messager {
+        &__list {
+            &-item {
+                &-link {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+
+    .button {
+        padding: 6px 9px;
+        font-size: 12px;
+        margin: 0px auto;
+    }
+
+    .form {
+        &__title {
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 24px;
+        }
+
+        &__button {
+            margin-top: 20px;
+        }
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .flex-container {
+        ._adaptiveFirst {
+            display: block;
+        }
+
+        &__left,
+        &__right {
+            width: 100%;
+        }
+
+        &__item {
+            margin-bottom: 14px;
+            width: 45%;
+        }
+
+        &_noadaptive {
+            display: flex;
+
+            .flex-container__left,
+            .flex-container__right {
+                width: 45%;
+            }
+        }
+    }
+
+    .list {
+        text-align: center;
+
+        &__item {
+            margin-top: 24px;
+            line-height: 15px;
+
+            &-number {
+                font-size: 14px;
+                margin: 10px 0px;
+            }
+
+            &-title {
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 10px;
+            }
+
+            &-desc {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .part-information {
+        margin: 0 auto;
+
+        &__title {
+            font-size: 14px;
+            line-height: 15px;
+            margin-bottom: 5px;
+        }
+
+        &__p {
+            font-size: 10px;
+            line-height: 15px;
+
+            &_tab {
+                padding-left: 0px;
+                margin-top: 20px;
+            }
+
+            span {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .tabs {
+        text-align: center;
+
+        &__label {
+            font-size: 14px;
+            line-height: 20px;
+            margin-right: 16px;
+        }
+
+        &__content {
+            padding-top: 20px;
+        }
+    }
+
+    .p {
+        font-size: 15px;
+    }
+
+    .slider {
+        .img-adaptive {
+            width: 50%;
+            padding-bottom: 20px;
+        }
+    }
+
+    .img-adaptive {
+        &_displaynone {
+            display: none;
+        }
+    }
+
+    .slider2 {
+
+        .prev-button,
+        .next-button {
+            top: 40%;
+        }
+
+        .prev-button {
+            &_slider1 {
+                left: 10px;
+            }
+        }
+
+        .next-button {
+            &_slider1 {
+                right: 10px;
+            }
+        }
+    }
+
+}
+
+@media(max-width:520px) {
+    .p {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:480px) {
+    .header {
+        &__container {
+            padding: 30px 0px 10px 0px;
+        }
+
+        &__center {
+            padding-bottom: 10px;
+
+            &-title {
+                font-size: 18px;
+                line-height: 30px;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+
+            &-desc {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .main {
+        .section-information {
+            padding: 20px 0px;
+        }
+
+        .midle {
+            h2 {
+                width: 80%;
+                padding: 30px 0px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    .footer {
+        &__container {
+            padding: 30px 0px;
+        }
+
+        &__top {
+            margin-bottom: 30px;
+
+            &-form {
+                width: 90%;
+                margin: 0px auto;
+            }
+            
+            &-contacts {
+                &-title {
+                    margin-top: 18px;
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+
+                &-item {
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+
+
+    .title {
+        font-size: 18px;
+    }
+
+    .list {
+
+        &__item {
+            margin-top: 20px;
+
+            &-number {
+                font-size: 14px;
+                margin: 10px 0px;
+            }
+
+            &-title {
+                font-size: 14px;
+                margin-bottom: 8px;
+            }
+
+            &-desc {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .tabs {
+        text-align: center;
+
+        &__label {
+            font-size: 14px;
+            line-height: 20px;
+            margin-right: 16px;
+        }
+
+        &__content {
+            padding-top: 20px;
+        }
+    }
+
+    .slider2 {
+
+        .prev-button,
+        .next-button {
+            top: 25%;
+        }
+    }
+
+}
+
+@media(max-width:390px) {
+    .p {
+        font-size: 9px;
+    }
+
+}
+
+@media(max-width:320px) {
+    .header {
+        &__center {
+            &-title {
+                font-size: 16px;
+                line-height: 30px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            &-desc {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .main {
+        .midle {
+            h2 {
+                width: 90%;
+                padding: 20px 0px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .tabs {
+
+        &__label {
+            font-size: 12px;
+        }
+    }
+
+    .p {
+        font-size: 8px;
+    }
+
+    .slider2 {
+
+        .prev-button,
+        .next-button {
+            top: 0%;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

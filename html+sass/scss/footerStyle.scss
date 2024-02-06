@@ -1,0 +1,45 @@
+.footer{
+    background-color: black;
+    background-image: url(../img/footer.png);
+    color: white;
+    &__container, &__top, &__bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__container{
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+    &__top{
+        margin-bottom: 100px;
+        &-form{
+            width: 40%;
+        }
+        &-contacts{
+            &-title{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 33px;
+                margin-bottom: 30px;
+            }
+            &-item{
+                font-style: normal;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                margin-bottom: 20px;
+                span{
+                    display: block;
+                }
+            }
+        }
+    }
+    &__bottom{
+        &-link{
+            a{
+                color: white;
+            }
+        }
+    }
+
+}

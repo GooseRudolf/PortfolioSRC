@@ -1,0 +1,249 @@
+@import 'Normalize';
+@import 'fonts';
+@import 'slider';
+
+:root {
+   --index: calc(1vw + 1vh);
+}
+
+img,
+picture {
+   width: 100%;
+   height: 100%;
+}
+
+a {
+   text-decoration: none
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+.wrapper {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   font-family: NotoSans;
+}
+
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.bg-image {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.logo {
+   width: 182px;
+   height: 50px;
+   margin: 0px auto;
+}
+
+.messager {
+   &__list {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+
+      &-item {
+         display: flex;
+         align-items: center;
+         border: 1px solid rgba(255, 255, 255, 0);
+         border-radius: 10px;
+         padding: 5px;
+         list-style: none;
+
+         &-link {
+            display: block;
+            width: 30px;
+            height: 30px;
+
+            &-img {
+               width: 100%;
+               height: 100%;
+            }
+         }
+
+         &:hover {
+            background-color: #A9A32A;
+            border-color: rgba(255, 255, 255, 1);
+            ;
+         }
+      }
+   }
+}
+
+.button {
+   display: inline-block;
+   border: 1px solid white;
+   border-radius: 10px;
+   padding: 10px 15px;
+   text-transform: capitalize;
+   color: white;
+
+   &_black {
+      color: #000000;
+      border-color: #000000;
+   }
+
+   &:hover {
+      background-color: #A9A32A;
+   }
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   &__title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 33px;
+      margin-bottom: 30px;
+   }
+
+   &__input {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 10px 5px;
+      background-color: rgba($color: #000000, $alpha: 0);
+      color: white;
+      border: none;
+      border-bottom: 1px solid white;
+   }
+
+   &__button {
+      margin: 0;
+      margin-top: 30px;
+      background-color: rgba($color: #000000, $alpha: 0);
+   }
+}
+
+.title {
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 33px;
+   color: #868585;
+}
+
+.flex-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: stretch;
+   flex-wrap: wrap;
+   &__left,
+   &__right {
+      width: 45%;
+   }
+   &_flexcol {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      height: 100%;
+   }
+   &__item{
+      max-width:45%;
+      margin-bottom: 20px;
+   }
+}
+
+.list {
+   &__item {
+      list-style: none;
+      margin-top: 30px;
+      line-height: 22px;
+      font-weight: 400;
+
+      &-number {
+         font-size: 18px;
+         color: #868585;
+         margin: 15px 0px;
+      }
+
+      &-title {
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 25px;
+         margin-bottom: 15px;
+      }
+
+      &-desc {
+         font-size: 14px;
+      }
+
+      &-first {
+         margin-top: 0;
+      }
+   }
+}
+
+.part-information {
+   &__title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      margin-bottom: 10px;
+   }
+
+   &__p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      &_tab{
+         padding-left: 40px;
+         margin-top: 30px;
+      }
+      span {
+         display: block;
+         margin-bottom: 20px;
+      }
+   }
+}
+
+.tabs {
+   height: 100%;
+   &__input {
+      display: none;
+      &:checked+label {
+         border-bottom: 2px solid rgb(82, 75, 75);
+         cursor: default;
+      }
+   }
+   &__label {
+      display: inline-block;
+      user-select: none;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-right: 20px;
+      cursor: pointer;
+   }
+   &__content {
+      height: 100%;
+      display: none;
+      padding-top: 40px;
+   }
+   #tab-btn-1:checked~#content-1,
+   #tab-btn-2:checked~#content-2,
+   #tab-btn-3:checked~#content-3 {
+      display: block
+   }
+}
+
+
+
+
+@import 'headerStyle';
+@import 'mainStyle';
+@import 'footerStyle';
+
+@import 'Responsive';
