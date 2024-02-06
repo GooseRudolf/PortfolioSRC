@@ -1,0 +1,14 @@
+.tab-container,.tab-container2{
+    &__items{
+        overflow: hidden;
+        &-tablinks{
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+    &__content{
+        &-tabcontent{height: 100%;}
+    }
+}
+ 

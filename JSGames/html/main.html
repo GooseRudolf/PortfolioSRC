@@ -1,0 +1,52 @@
+<main class="main">
+    <div class="tab-container gametab">
+        <div class="tab-container__items">
+            <button class="tab-container__items-tablinks active" name="Tab1">2048</button>
+            <button class="tab-container__items-tablinks" name="Tab2">Змейка</button>
+            <button class="help open-popup" id="helpButton">
+                Подсказка
+            </button>
+            <div class="underline"></div>
+        </div>
+
+        <div class="tab-container__content">
+            <div id="Tab1" class="tab-container__content-tabcontent activeTab">
+                <div class="game2084">
+                    <div id="game-board"></div>
+                </div>
+            </div>
+
+            <div id="Tab2" class="tab-container__content-tabcontent">
+                <div id="game" class="game-snake">
+                    <div class="game-snake__header">
+                        <div class="game-snake__score">
+                            <span class="game-snake__score-count">1234</span>
+                        </div>
+                    </div>
+                    <div class="game-snake__canvas">
+                        <canvas id = "game-canvas" class="game-snake__canvas-item" width="320" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="popup" name="helpButton">
+        <div class="popup__body">
+            <div class="popup__body-closeButton popup__body-closeButton_second" name="helpButton">X</div>
+            <div class="popup__body-contentHelp"></div>
+        </div>
+    </div>
+
+    <div class="popup looseScreen" name="btnLoose">
+            <div class="popup__body looseScreenBody">
+                <div class="popup__body-content">
+                    Loose
+                    <div class="popup__body-closeButton btnLoose" name="btnLoose">Restart</div>
+                </div>
+            </div>
+    </div>
+</main>

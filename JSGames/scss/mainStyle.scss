@@ -1,0 +1,172 @@
+*{box-sizing: border-box;}
+.main{
+    background-color: #333;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    .gametab{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        .tab-container__content{
+            width: 100%;
+            text-align: center;
+        }
+        .tab-container__items{
+            background-color: #333;
+            color: #000;
+            box-sizing: border-box;
+            position: relative;
+            &-tablinks{ 
+                background-color: #333;
+                color: white;
+                font-weight: 700;
+                font-size: 18px;
+                padding: 10px 16px;
+            }
+            .underline{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 4px;
+                background-color: #b30000;
+                pointer-events: none;
+                transition: all 0.3s ease-out;
+            }
+        }
+
+        .tab-container__content{
+            flex-grow: 1;
+        }
+    }
+
+    .game2084{
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        #game-board{
+           --cel-size: 20vmin;
+           --cel-grap: 2vmin;
+           position: relative;
+           display: grid;
+           grid-template-columns: repeat(4, var(--cel-size));
+           grid-template-rows: repeat(4, var(--cel-size));
+           gap: var(--cel-grap);
+           border-radius: 1vmin;
+           .cell{
+              background-color: #444;
+              border-radius: 1vmin
+           }
+           .tile{
+              --y:1;
+              --x:2;
+              position: absolute;
+              top: calc(var(--y)*(var(--cel-size) + var(--cel-grap)));
+              left: calc(var(--x)*(var(--cel-size) + var(--cel-grap)));
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: var(--cel-size);
+              height: var(--cel-size);
+              border-radius: 1vmin;
+              font-size: 7.5vmin;
+              font-weight: bold;
+              background-color: var(--bg-lightness);
+              color: var(--text-lightnessd);
+              transition: 100ms;
+              animation: show 200ms;
+           }
+        }
+     }
+     @keyframes show{
+        0%{
+           opacity: 0.5;
+           transform: scale(0);
+        }
+     }
+    
+
+    .game-snake{
+        background: #353336;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__header{
+            padding-top: 1vmin;
+            padding-bottom: 1vmin;
+
+            display: flex;
+            justify-content: space-between;
+        }
+        &__score{
+            padding: 10px 15px;
+            min-width: 160px;
+            height: 50px;
+            background: #121214;
+            border-radius: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-count{
+                font-size: 3vmin;
+                color: #D21855;
+                font-weight: bold;
+            }
+        }
+        &__canvas{
+            background-color: #161618;
+            border-radius: 5px;
+            border: 10px solid #161618;
+            box-shadow: 0px 0px 40px 10px #161618;
+            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.2'%3E%3Ccircle cx='8' cy='8' r='4' fill='%23525053'/%3E%3C/g%3E%3C/svg%3E%0A");
+            &-item{
+                display: block;
+	            border-radius: 5px;	
+            }
+        }
+    }
+
+    .popup{
+        text-align: center;
+        &__body{
+            &-closeButton{
+                background-color:#b30000;
+                border: 1px solid #353336;
+                border-radius: 10px;
+                color: #fff;
+                position: static;
+                margin: 20px auto 0px auto;
+                padding: 5px 0px;
+                width: 50%;
+                &_second{
+                    position: absolute;
+                    top: 5px;
+                    right: 5px;
+                    margin: 0;
+                    width: auto;
+                    padding: 3px 7px;
+                }
+            }
+        }
+    }
+    .help{
+        cursor: pointer;
+        color: #fff;
+        background-color: #b30000;
+        border: 1px solid #000;
+        padding: 5px 15px;
+        border-radius: 10px;
+        transition: 500ms ;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+        }
+    }
+}
