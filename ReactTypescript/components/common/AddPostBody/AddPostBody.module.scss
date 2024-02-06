@@ -1,0 +1,112 @@
+.addPost__container{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    margin: 0px auto;
+    padding: 20px;
+    &_img{
+        overflow: hidden;
+        border-radius: 5px;
+        width: 500px;
+        height: 380px;
+    }
+    &_deck{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            &_input{
+                text-align: center;
+                margin-bottom: 20px;
+                input{
+                    box-sizing: border-box;
+                    width: 70%;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+           
+            &_buttons{
+                display: grid;
+                grid-template-columns: repeat(2,50%);
+                &_btn{
+                    width: auto;
+                }
+            }
+
+    }
+
+    &_btn{
+        cursor: pointer;
+        margin: 0 auto;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        background-color: var(--pink_color);
+        color: var(--white_color);
+        box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        width: 70%;
+        border-radius: 5px;
+        transition: .2s ease all 0s;
+        &:hover{
+            background-color: var(--blue_color);
+
+        }
+    }
+}
+.btn2{
+    &:hover{
+        background-color: yellow;
+        color: var(--black_color);
+    }
+}
+.btn3{
+    &:hover{
+        background-color: red;
+    }
+}
+
+@media(max-width:1000px) {
+    .addPost__container{
+        padding: 0px;
+        &_img{
+            width: 400px;
+            height: 280px;
+        }
+        &_deck {
+            &_input {
+                input {
+                    width: 90%;
+                }
+            }
+        }
+        &_btn{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .addPost__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr;
+        &_img{
+            width: 80%;
+            margin: 0px auto;
+            img{ border-radius: 5px;}
+            box-sizing: border-box;
+            order: 1;
+        }
+        &_deck {
+            order: 2;
+        }
+    }
+}
+
+@media(max-width:520px) {}
+
+@media(max-width:480px) {}
+
+@media(max-width:320px) {}
+

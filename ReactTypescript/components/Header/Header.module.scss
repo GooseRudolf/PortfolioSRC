@@ -1,0 +1,22 @@
+.header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--black_color);
+    color: var(--white_color);
+    &__content{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+    }
+}
+
+@media(max-width:1000px) {
+    .header{
+        font-size: 16px;
+    }   
+}
+@media(max-width:768px) {
+    .header{
+        font-size: 14px;
+    }   
+}

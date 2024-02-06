@@ -1,0 +1,27 @@
+.logo{
+    cursor: pointer;
+    width: 50px;
+    padding: 10px;
+    &__image{
+        border-radius: 50%;
+    }
+}
+
+@media(max-width:1000px) {
+   .logo{
+    width: 45px;
+   }
+}
+@media(max-width:768px) {
+    .logo{
+        padding: 5px;
+        padding-right: 10px;
+    }
+}
+@media(max-width:480px) {
+    .logo{
+        padding: 3px;
+        padding-right: 7px;
+        width: 37px;
+    }
+}

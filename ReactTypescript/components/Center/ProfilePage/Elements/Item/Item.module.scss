@@ -1,0 +1,42 @@
+.item{
+    cursor: pointer;
+    padding: 10px;
+    &__img{
+        height: 220px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    &__description{
+        padding-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media(max-width:1000px) {
+    .item{
+        &__img{
+            height: 200px;
+        }
+        &__description{
+            padding-top: 7px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media(max-width:520px) {
+    .item{
+        margin: 0px 30px;
+    }
+}
+
+@media(max-width:480px) {
+    .item{
+        margin: 0px 20px;
+        &__description{
+            padding-top: 5px;
+            font-size: 16px;
+        }
+    }
+}

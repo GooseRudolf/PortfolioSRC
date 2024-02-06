@@ -1,0 +1,35 @@
+.mainPage{
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.elements{
+    background-color: var(--blue_color);
+}
+.imageList{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 40px 0px;
+}
+
+@media(max-width:1000px) {
+    .imageList{
+        grid-template-columns: 33.33% 33.34% 33.33%;
+    }
+}
+
+@media(max-width:768px) {}
+
+@media(max-width:520px) {
+    .imageList{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media(max-width:480px) {
+    .imageList{
+        grid-template-columns: 100%;
+    }
+}
+
+@media(max-width:320px) {}

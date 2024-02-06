@@ -1,0 +1,40 @@
+.users{
+    height: 100%;
+    padding: 70px 0px;
+    box-sizing: border-box;
+    background-color: var(--blue_color);
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+@media(max-width:1000px) {
+    .users{
+        padding: 70px 0px;
+        &__list{
+            grid-template-columns: 33.33% 33.34% 33.33%;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .users{
+        padding: 70px 0px;
+        &__list{
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
+
+@media(max-width:520px) {
+    .users{
+        padding: 70px 0px;
+        &__list{
+            grid-template-columns: 100%;
+        }
+    }
+}
+

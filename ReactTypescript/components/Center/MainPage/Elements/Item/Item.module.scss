@@ -1,0 +1,90 @@
+.item{
+    cursor: pointer;
+    padding: 5px;
+    color: var(--white_color);
+    display: grid;
+    grid-template-rows: 1fr 30%;
+    &_img{
+        border-radius: 20px;
+        overflow: hidden;
+        max-height: 200px;
+    }
+    &_description{
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        &_ava{
+            width: 50px;
+            height: 55px;
+            margin-right: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        &_named{
+            &_nameOfImage{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            &_nameOfAuthor{
+                font-size: 12px;
+            }
+            &_nameOfCategories{
+                font-size: 12px;
+            }
+        }
+    }
+} 
+
+@media(max-width:1000px) {
+    .item{
+        &_description{
+            padding-top: 7px;
+            &_ava{
+               width: 45px;
+               height: 47px;
+            }
+            &_named{
+                &_nameOfImage{
+                    font-size: 16px;
+                    margin-bottom: 7px;
+                }
+                &_nameOfAuthor, &_nameOfCategories{
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+ }
+
+@media(max-width:768px) {
+    .item{
+        &_description{
+            padding-top: 5px;
+            &_ava{
+               width: 37px;
+               height: 40px;
+            }
+            &_named{
+                &_nameOfImage{
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                }
+                &_nameOfAuthor, &_nameOfCategories{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:480px) {
+    .item{
+        padding: 5px 50px;
+    }
+}
+
+@media(max-width:320px) {
+    .item{
+        padding: 5px 20px;
+    }
+}

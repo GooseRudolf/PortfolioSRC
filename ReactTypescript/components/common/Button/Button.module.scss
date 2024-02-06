@@ -1,0 +1,37 @@
+.button {
+    cursor: pointer;
+    border: 1px solid rgba($color: #fff, $alpha: .5);
+    padding: 2px ;
+    display: inline-block;
+    &__body {
+        transition: 0.3s ease 0s;
+        cursor: pointer;
+        border: none;
+        padding: 10px 20px;
+    }
+    .btn0{
+        background-color: var(--pink_color);
+        color: var(--white_color);
+        &:hover{
+            background-color: var(--white_color);
+            color: var(--black_color);
+        }
+    }
+    .btn1{
+        background-color: var(--white_color);
+        color: var(--black_color);
+        &:hover{
+            background-color: var(--pink_color);
+            color: var(--white_color);
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .button{
+        &__body{
+            font-size: 12px;
+            padding: 7px 16px;
+        }
+    }
+}

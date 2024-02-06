@@ -1,0 +1,23 @@
+.main{
+    height: 100%;
+    padding-top: 75px;
+    box-sizing: border-box;
+}
+@media(max-width:1000px) {
+    .main {
+        padding-top: 70px;
+    }
+}
+@media(max-width:768px) {
+    .main {
+        padding-top: 60px;
+    }
+}
+
+@media(max-width:480px) {
+    .main {
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:320px) {}

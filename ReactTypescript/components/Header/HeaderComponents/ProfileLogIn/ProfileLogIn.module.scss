@@ -1,0 +1,47 @@
+.link{
+    color:var(--white_color);
+    display: block;
+    height: 100%;
+}
+.profile{
+    cursor: pointer;
+    background-color: var(--blue_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform: skew(-20deg);
+    padding: 0px 30px;
+    &:hover{
+        background-color: var(--pink_color);
+    }
+    &__button{
+        transform: skew(20deg);
+    }
+}
+
+.twoParts{
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        background-color: var(--blue_color);
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        transform: skew(20deg);
+    }
+    &:hover{
+        &::after{
+            background-color: var(--pink_color);
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    
+}
+
+@media(max-width:768px) {}

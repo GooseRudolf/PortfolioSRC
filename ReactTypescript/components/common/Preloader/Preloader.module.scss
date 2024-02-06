@@ -1,0 +1,22 @@
+.preloader{
+    height: 100%;
+    background-color: var(--blue_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        text-align: center;
+    }
+    &__title{
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--white_color);
+    }
+    &__img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
